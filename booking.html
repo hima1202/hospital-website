@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&family=Tilt+Prism&display=swap');
+        :root{
+            --green:#16a084;
+            --black:#444;
+            --light-color:#777;
+            --text-shadow:.4rem .4rem 0 rgba(0,0,0,.2);
+            --border:.2rem solid var(--green);
+           
+
+           }
+           body{
+            background-image: url(IMG_3841.JPG);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: relative;
+           }
+        .book .row{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            width: 900px;
+            margin-left: 7%;
+        }
+       
+        
+        .book .row form{
+           
+            flex:1 1 45rem;
+            background: #fff;
+            opacity: 0.5;
+            border: var(--border);
+            box-shadow: var(--box-shadow);
+            text-align: center;
+            padding: 2rem;
+            border-radius: .5rem;
+          
+            margin-top: 10%;
+            margin-left: 350px;
+        }
+        input{
+            font-size: 20px;
+            border: var(--border);
+            
+        }
+        .book .row form .box{
+            width: 90%;
+           
+            border-radius: .5rem;
+            border: var(--border);
+            
+            color: var(--black);
+            text-transform: none;
+            padding: 1rem;
+        }
+        h1{
+            margin-top: 40px;
+            margin-left: 40%;
+            font-size: 50px;
+            color: crimson;
+            font-family: satisfy;
+            font-family: 'Jost', sans-serif;
+           font-family: 'Tilt Prism', cursive;
+        }
+        .btn{
+            font-size: 20px;
+            background-color: rgb(87, 115, 115);
+            color: #000000;
+             margin-left: 20px;
+             margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section class="book" id="book">
+        <h1 class="heading">
+          Book now 
+        </h1>
+        <div class="row">
+          
+            <form action="">
+                <label for="">Patient Name:</label>
+                <input type="text" placeholder="Enter Your Name" class="box"><br>
+                <label for="">Phone Number:</label>
+                <input type="number" placeholder="Enter Your Number" class="box"><br>
+                <label for="">Age:</label><br>
+                <input type="number" placeholder="Enter Your age" class="box"><br>
+                <label for="">EMail ID:</label>
+                <input type="email" placeholder="Enter Your email" class="box"><br>
+                <label for="">Appointment Date:</label>
+                <input type="date" class="box">
+                <input type="submit" value="Book Now" class="btn"><br>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
